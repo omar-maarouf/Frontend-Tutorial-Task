@@ -70,6 +70,10 @@ footer {
     color: #FDAA0B;
 }
 
+.grey {
+    background-color: #AEAEAE;
+}
+
 .left {
     direction: ltr;
 }
@@ -853,9 +857,399 @@ footer {
     position: relative;
     top: -5px;
     right: 15px;
-    width: 466px;
+    width: 539px;
     height: 0px;
     border: 2px solid #016E441A;
 }
 
-/* #offers .card-top {} */
+#offers .card-content {
+    text-align: center;
+    height: 344px;
+}
+
+#offers .pagination {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 8px 8px 10px;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -500px;
+}
+
+#banner-1 img {
+    width: 309px;
+    height: 314px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#banner-2 img {
+    width: 279px;
+    height: 274px;
+    border-radius: 5px;
+}
+
+#banner-2 {
+    border-radius: 5px;
+    position: relative;
+    top: -295px;
+    left: 60px;
+    z-index: -1;
+}
+
+#banner-3 {
+    width: 249px;
+    height: 234px;
+    border-radius: 5px;
+    position: relative;
+    top: -560px;
+    left: -70px;
+    z-index: -2;
+    background-color: #EDEDFF;
+}
+
+/* Section 5 */
+
+#section-5 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 397px 783px;
+    gap: 75px;
+    justify-content: space-between;
+    grid-auto-flow: column;
+}
+
+#ads {
+    width: 397px;
+}
+
+#ads .card-top {
+    display: grid;
+    grid-template-columns: 169px 208px;
+    align-items: baseline;
+    position: relative;
+    top: 0px;
+}
+
+#ads .card-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+    padding: 0 0 0 0;
+    position: relative;
+    top: 0;
+    text-align: right;
+    right: 0;
+}
+
+#ads .line {
+    position: relative;
+    top: -5px;
+    right: 15px;
+    width: 208px;
+    height: 0px;
+    border: 2px solid #016E441A;
+}
+
+#ads img {
+    width: 397px;
+    height: 171px;
+}
+
+#events {
+    width: 783px;
+}
+
+#events .card-top {
+    display: grid;
+    grid-template-columns: 89px 674px;
+    align-items: baseline;
+    position: relative;
+    top: 0px;
+}
+
+#events .card-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+    padding: 0 0 0 0;
+    position: relative;
+    top: 0;
+    text-align: right;
+    right: 0;
+}
+
+#events .line {
+    position: relative;
+    top: -5px;
+    right: 15px;
+    width: 674px;
+    height: 0px;
+    border: 2px solid #016E441A;
+}
+
+#events .card-content {
+    display: grid;
+    grid-template-columns: 328px 378px;
+    gap: 20px;
+    background-color: #49E3A81A;
+    padding: 20px 20px 20px 37px;
+    align-items: center;
+}
+
+#events img {
+    width: 328px;
+    height: 304px;
+}
+
+#events .details h6 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: var(--primary-text-color);
+}
+
+#events .details p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: var(--primary-text-color);
+}
+
+/* Section 6 */
+
+#section-6 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 616px 564px;
+    gap: 20px;
+    justify-content: space-between;
+    grid-auto-flow: column;
+}
+
+#studio {
+    width: 616px;
+}
+
+#studio .card-top {
+    display: grid;
+    grid-template-columns: 167px 419px;
+    align-items: baseline;
+    position: relative;
+    top: 0px;
+}
+
+#studio .card-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+    padding: 0 0 0 0;
+    position: relative;
+    top: 0;
+    text-align: right;
+    right: 0;
+}
+
+#studio .line {
+    position: relative;
+    top: -5px;
+    right: 15px;
+    width: 419px;
+    height: 0px;
+    border: 2px solid #016E441A;
+}
+
+#studio .card-content {
+    text-align: center;
+}
+
+#studio video {
+    width: 616px;
+    height: 335px;
+    margin-bottom: 0;
+    height: 335px;
+}
+
+#studio svg {
+    z-index: 10;
+    position: relative;
+    top: -200px;
+}
+
+#studio svg:hover {
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 8px 10px 8px;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.circle-selected {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#generals, #forms {
+    width: 564px;
+}
+
+#generals .card-top {
+    display: grid;
+    grid-template-columns: 100px 444px;
+    align-items: baseline;
+    position: relative;
+    top: 0px;
+}
+
+#generals .card-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+    padding: 0 0 0 0;
+    position: relative;
+    top: 0;
+    text-align: right;
+    right: 0;
+}
+
+#generals .line {
+    position: relative;
+    top: -5px;
+    right: 15px;
+    width: 444px;
+    height: 0px;
+    border: 2px solid #016E441A;
+}
+
+#generals .card-content ul li {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+}
+
+#generals ul {
+    list-style: none;
+    padding-right: 0;
+}
+
+#generals ul li {
+    position: relative;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+}
+
+#generals ul li::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 114px;
+    height: 81px;
+    background-image: url('generals.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#forms .card-top {
+    display: grid;
+    grid-template-columns: 138px 406px;
+    align-items: baseline;
+    position: relative;
+    top: 0px;
+}
+
+#forms .card-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+    padding: 0 0 0 0;
+    position: relative;
+    top: 0;
+    text-align: right;
+    right: 0;
+}
+
+#forms .line {
+    position: relative;
+    top: -5px;
+    right: 15px;
+    width: 406px;
+    height: 0px;
+    border: 2px solid #016E441A;
+}
+
+#forms .card-content {
+    margin-top: 0;
+    text-align: center;
+}
+
+#forms .card-content h6 {
+    position: relative;
+    top: -50px;
+    padding-right: 37px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: var(--primary-text-color);
+}
+
+#forms .radio {
+    display: grid;
+    grid-template-columns: repeat(4, 69px);
+    gap: 50px;
+    position: relative;
+    padding-right: 37px;
+    top: -60px;
+}
+
+#forms .radio label {
+    cursor: pointer;
+    align-items: center;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    position: relative;
+    top: -7px;
+}

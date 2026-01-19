@@ -45,3 +45,16 @@ function leftNav()
     var x = navLinks.children[0].clientWidth + parseInt(window.getComputedStyle(navLinks).gap) + 3;
     navLinks.scrollBy(x, 0);
 }
+
+function play_pauseVideo()
+{
+    var video = document.getElementsByTagName("video")[0];
+    if(video.paused || video.ended)
+    {
+        video.play();
+    }
+    else
+    {
+        video.pause();
+    }
+}
