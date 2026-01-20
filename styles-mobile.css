@@ -1,0 +1,406 @@
+@media screen and (max-width: 800px) {
+    body {
+        flex-direction: column !important;
+        border: 1px solid #000000;
+    }
+
+    nav {
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    footer {
+        padding: 20px 10px 23px 0;
+        width: 97%;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .action-btn svg {
+        width: 50%;
+        height: 50%;
+    }
+
+    .translate-btn svg {
+        width: inherit;
+        height: inherit;
+    }
+
+    .upper-header {
+        padding: 0 0 0 0;
+    }
+
+    .lower-header {
+        padding: 50px 0 0 0;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .logo {
+        width: 50%;
+        background-position: 10px -50px;
+    }
+
+    .actions-grp {
+        width: 50%;
+    }
+
+    .action-btn {
+        width: 30px;
+        height: 30px;
+        padding: 2.5px 0 0 0.5px;
+    }
+
+    .translate-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-picture {
+        width: 37.5px;
+        height: 37.5px;
+    }
+
+    .top-cards {
+        justify-content: center;
+        width: 393px;
+    }
+
+    .cards {
+        width: 322px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .top-cards .card {
+        width: 151px !important;
+        height: 75px !important;
+    }
+
+    .card-title {
+        position: relative;
+        top: -8px;
+        left: 15px;
+    }
+
+    .card-icon svg {
+        width: 80%;
+        height: 80%;
+        position: relative;
+        top: -5px;
+        left: 15px;
+    }
+
+    .card-top .card-title {
+        font-style: normal;
+        font-weight: 650;
+        font-size: 22px;
+        line-height: 25px;
+        color: var(--primary-text-color);
+        margin-top: 0px;
+        padding: 0 0 0 0;
+        position: relative;
+        top: 0;
+        text-align: right;
+        right: 10px !important;
+    }
+
+    #section-1, #section-2, #section-4, #section-5, #section-6 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #section-1, #section-2, #section-3, #section-4, #section-5, #section-6 {
+        gap: 30px;
+    }
+
+    #section-3 .card-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #yammer-card, #services-card, #news-card, #twitter-card, #section-3, #hi, #offers, #ads, #events, #studio, #generals, #forms,
+    #yammer-card .card-top .line, #services-card .card-top .line, #news-card .card-top .line, #twitter-card .card-top .line, #section-3 .card-top .line,
+    #hi .card-top .line, #offers .card-top .line, #ads .card-top .line, #events .card-top .line, #studio .card-top .line,
+    #generals .card-top .line, #forms .card-top .line {
+        width: 100%;
+    }
+
+    #yammer-card .card-top {
+        width: 100%;
+        grid-template-columns: 35% 55%;
+        gap: 5%;
+    }
+    
+    #services-card .card-top {
+        width: 100%;
+        grid-template-columns: 22% 72%;
+        gap: 5%;
+    }
+
+    #news-card .card-top {
+        width: 100%;
+        grid-template-columns: 32% 62%;
+        gap: 5%;
+    }
+    
+    #twitter-card .card-top {
+        width: 100%;
+        grid-template-columns: 35% 60%;
+        gap: 5%;
+    }
+    
+    #section-3 .card-top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 32% 58%;
+        gap: 5%;
+    }
+    
+    #hi .card-top {
+        width: 100%;
+        grid-template-columns: 18% 72%;
+        gap: 5%;
+    }
+    
+    #offers .card-top {
+        width: 100%;
+        grid-template-columns: 18% 72%;
+        gap: 5%;
+    }
+    
+    #ads .card-top {
+        width: 100%;
+        grid-template-columns: 32% 58%;
+        gap: 5%;
+    }
+    
+    #events .card-top {
+        width: 100%;
+        grid-template-columns: 18% 72%;
+        gap: 5%;
+    }
+    
+    #studio .card-top {
+        width: 100%;
+        grid-template-columns: 38% 52%;
+        gap: 5%;
+    }
+    
+    #generals .card-top {
+        width: 100%;
+        grid-template-columns: 18% 72%;
+        gap: 5%;
+    }
+    
+    #forms .card-top {
+        width: 100%;
+        grid-template-columns: 24% 66%;
+        gap: 5%;
+    }
+
+    #yammer-card .card-content {
+        width: 90%;
+    }
+
+    #services-card .card-content {
+        width: 100%;
+    }
+
+    #news-card .card-content
+    {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #twitter-card .card-content {
+        width: 100%;
+    }
+
+    #hi .card-content {
+        width: 83%;
+        padding: 30px 33px 0 33px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #offers .card-content {
+        width: 100%;
+    }
+
+    #ads .card-content {
+        width: 100%;
+    }
+
+    #events .card-content {
+        width: 90%;
+        padding: 20px 20px 20px 20px;
+    }
+
+    #studio .card-content {
+        width: 100%;
+    }
+
+    #generals .card-content {
+        width: 100%;
+    }
+
+    #forms .card-content {
+        width: 100%;
+    }
+
+    /* Services */
+    #services-card .inner-nav {
+        gap: 0;
+    }
+
+    /* News */
+    #news-card {
+        height: auto;
+    }
+
+    .news-image img {
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .news-text {
+        width: 99%;
+        right: 0;
+        border: none;
+    }
+
+    .inner-line {
+        width: 0%;
+    }
+
+    /* Twitter */
+    #twitter-card {
+        height: auto;
+    }
+
+    .twitter-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #twitter-card .details, #twitter-card .title {
+        margin-right: 5px;
+    }
+
+    /* Section 3 */
+    #section-3 .calendar {
+        position: relative;
+        right: 0;
+        width: 98%;
+        padding: 11px 2px 11px 2px;
+        margin-bottom: 20px;
+    }
+
+    .days {
+        gap: 6px 6px;
+    }
+
+    #section-3 .side-content {
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .side-content .inner-nav {
+        gap: 0;
+    }
+
+    /* Hi */
+    #hi .hi-cards {
+        width: 340px;
+        height: 300px;
+    }
+
+    #hi .cards {
+        width: 250px;
+        height: 100%;
+        width: 322px;
+        display: grid;
+        grid-template-columns: repeat(3, 225px);
+        gap: 5px;
+    }
+
+    #hi .card {
+        width: 225px;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hi .contact {
+        width: 100%;
+        height: auto;
+    }
+
+    #hi .contact h6 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    /* Offers */
+    #banner-1 {
+        position: relative;
+        left: -3px;
+    }
+
+    #banner-2 {
+        left: 23px;
+    }
+
+    #banner-3 {
+        left: -23px;
+    }
+
+    /* Ads */
+
+    /* Events */
+    #events .card-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #events img {
+        width: 90%;
+    }
+
+    /* Studio */
+    #studio video {
+        width: 100%;
+    }
+
+    .pagination {
+        top: -130px;
+    }
+
+    /* Generals */
+    #generals {
+        position: relative;
+        top: -130px;
+    }
+
+    /* Forms */
+    #forms {
+        position: relative;
+        top: -130px;
+    }
+
+    #forms .radio {
+        gap: 20px;
+    }
+}

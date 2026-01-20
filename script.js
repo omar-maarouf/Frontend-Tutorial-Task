@@ -35,15 +35,29 @@ function buildCalendar()
 function rightNav()
 {
     var navLinks = document.getElementsByClassName("top-cards")[0].children[1];
-    var x = navLinks.children[0].clientWidth + parseInt(window.getComputedStyle(navLinks).gap) + 3;
+    var x = navLinks.children[0].clientWidth + parseInt(window.getComputedStyle(navLinks).gap) + (window.innerWidth <= 1000 ? 2 : 3);
     navLinks.scrollBy((-1 * x), 0);
 }
 
 function leftNav()
 {
     var navLinks = document.getElementsByClassName("top-cards")[0].children[1];
-    var x = navLinks.children[0].clientWidth + parseInt(window.getComputedStyle(navLinks).gap) + 3;
+    var x = navLinks.children[0].clientWidth + parseInt(window.getComputedStyle(navLinks).gap) + (window.innerWidth <= 1000 ? 2 : 3);
     navLinks.scrollBy(x, 0);
+}
+
+function rightHi()
+{
+    var hiCards = document.getElementsByClassName("hi-cards")[0].children[1];
+    var x = hiCards.children[0].clientWidth + parseInt(window.getComputedStyle(hiCards).gap)  + (window.innerWidth <= 1000 ? 0 : 3);
+    hiCards.scrollBy((-1 * x), 0);
+}
+
+function leftHi()
+{
+    var hiCards = document.getElementsByClassName("hi-cards")[0].children[1];
+    var x = hiCards.children[0].clientWidth + parseInt(window.getComputedStyle(hiCards).gap) + (window.innerWidth <= 1000 ? 0 : 3);
+    hiCards.scrollBy(x, 0);
 }
 
 function play_pauseVideo()

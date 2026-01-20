@@ -8,6 +8,10 @@
 }
 
 /* Tags */
+body {
+    margin: 0 0 0 0;
+}
+
 main {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -95,7 +99,7 @@ footer {
 }
 
 .primary-bg {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
 }
 
 .secondary-bg {
@@ -151,6 +155,20 @@ footer {
 
 .hidden {
     display: none !important;
+}
+
+.card-top .card-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+    padding: 0 0 0 0;
+    position: relative;
+    top: 0;
+    text-align: right;
+    right: 0;
 }
 
 /* Custom Classes */
@@ -270,6 +288,8 @@ footer {
     text-align: center;
 }
 
+/* Top Cards */
+
 .top-cards {
     display: flex;
     align-items: center;
@@ -294,7 +314,7 @@ footer {
 }
 
 .card {
-    width: 182px !important;
+    width: 182px;
     height: 102px;
     background-color: var(--primary-color);
     border-radius: 10px;
@@ -364,34 +384,33 @@ footer {
 /* Section 1 */
 
 #section-1 {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
     width: 1290px;
     direction: rtl;
 }
 
 #yammer-card .card-top {
-    display: flex;
-    align-items: last baseline;
-}
-
-#yammer-card .card-top .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    right: 17px;
-    color: var(--primary-text-color);
+    display: grid;
+    grid-template-columns: 170px 430px;
+    align-items: baseline;
+    position: relative;
+    top: 0px;
 }
 
 #yammer-card .card-top .line {
     position: relative;
-    top: 5px;
+    top: -5px;
     right: 15px;
-    width: 490px;
+    width: 430px;
     height: 0px;
     border: 2px solid #016E441A;
+}
+
+#yammer-card .card-top .card-title {
+    right: -17px;
 }
 
 #yammer-card .card-content {
@@ -404,23 +423,17 @@ footer {
 }
 
 #services-card .card-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 106px 416px;
     align-items: baseline;
-}
-
-#services-card .card-top .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    right: 0px;
-    color: var(--primary-text-color);
+    position: relative;
+    top: 0px;
 }
 
 #services-card .card-top .line {
     position: relative;
-    top: 5px;
-    width: 475px;
+    top: -5px;
+    width: 416px;
     height: 0px;
     border: 2px solid #016E441A;
 }
@@ -490,10 +503,9 @@ footer {
 
 #section-2 {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 880px 377px;
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    grid-auto-flow: column;
 }
 
 #news-card {
@@ -509,21 +521,7 @@ footer {
     top: 0px;
 }
 
-#news-card .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#news-card .line {
+#news-card .card-top .line {
     width: 700px;
     height: 0px;
     border: 2px solid #016E441A;
@@ -600,21 +598,7 @@ footer {
     top: 0px;
 }
 
-#twitter-card .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#twitter-card .line {
+#twitter-card .card-top .line {
     width: 319px;
     height: 0px;
     border: 2px solid #016E441A;
@@ -648,6 +632,7 @@ footer {
 /* Section 3 */
 
 #section-3 {
+    margin-top: 30px;
     width: 1285px;
 }
 
@@ -663,15 +648,6 @@ footer {
     width: 1150px;
     height: 0px;
     border: 2px solid #016E441A;
-}
-
-#section-3 .card-top .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    right: 0px;
-    color: var(--primary-text-color);
 }
 
 #section-3 .card-content {
@@ -786,10 +762,9 @@ footer {
 
 #section-4 {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 554px 641px;
+    display: flex;
+    justify-content: center;
     gap: 62px;
-    grid-auto-flow: column;
 }
 
 #hi {
@@ -804,27 +779,78 @@ footer {
     top: 0px;
 }
 
-#hi .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#hi .line {
+#hi .card-top .line {
     position: relative;
     top: -5px;
     right: 15px;
     width: 466px;
     height: 0px;
     border: 2px solid #016E441A;
+}
+
+#hi .card-content {
+    padding: 30px 33px 104px 33px;
+}
+
+#hi .card-content h6 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 30px 0;
+}
+
+#hi .hi-cards {
+    width: 488px;
+    height: 134px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30.8px;
+    align-items: center;
+}
+
+#hi .cards {
+    width: 346px;
+    height: 134px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr !important;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+#hi .card {
+    width: 346px;
+    height: 134px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+}
+
+#hi .contact {
+    width: 206px;
+}
+
+#hi .contact h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--primary-text-color);
+    margin: 0 0 5px 0;
+    text-align: right;
+}
+
+#hi .picture, #hi .picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 
 #offers {
@@ -839,21 +865,7 @@ footer {
     top: 0px;
 }
 
-#offers .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#offers .line {
+#offers .card-top .line {
     position: relative;
     top: -5px;
     right: 15px;
@@ -914,11 +926,9 @@ footer {
 
 #section-5 {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 397px 783px;
+    display: flex;
+    justify-content: center;
     gap: 75px;
-    justify-content: space-between;
-    grid-auto-flow: column;
 }
 
 #ads {
@@ -933,21 +943,7 @@ footer {
     top: 0px;
 }
 
-#ads .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#ads .line {
+#ads .card-top .line {
     position: relative;
     top: -5px;
     right: 15px;
@@ -973,21 +969,7 @@ footer {
     top: 0px;
 }
 
-#events .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#events .line {
+#events .card-top .line {
     position: relative;
     top: -5px;
     right: 15px;
@@ -1032,11 +1014,9 @@ footer {
 
 #section-6 {
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 616px 564px;
-    gap: 20px;
-    justify-content: space-between;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
 }
 
 #studio {
@@ -1051,21 +1031,7 @@ footer {
     top: 0px;
 }
 
-#studio .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#studio .line {
+#studio .card-top .line {
     position: relative;
     top: -5px;
     right: 15px;
@@ -1130,21 +1096,7 @@ footer {
     top: 0px;
 }
 
-#generals .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#generals .line {
+#generals .card-top .line {
     position: relative;
     top: -5px;
     right: 15px;
@@ -1194,21 +1146,7 @@ footer {
     top: 0px;
 }
 
-#forms .card-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--primary-text-color);
-    margin-top: 0px;
-    padding: 0 0 0 0;
-    position: relative;
-    top: 0;
-    text-align: right;
-    right: 0;
-}
-
-#forms .line {
+#forms .card-top .line {
     position: relative;
     top: -5px;
     right: 15px;
