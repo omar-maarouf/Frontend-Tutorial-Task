@@ -189,8 +189,11 @@
         right: 0;
         margin: auto;
         height: auto;
-        justify-content: left;
+        /* justify-content: left; */
+        justify-content: center;
+        flex-direction: column;
         gap: 0;
+        overflow-x: scroll;
     }
 
     #services-card .card-content {
@@ -247,14 +250,16 @@
     }
 
     /* Yammer */
-    #yammer-card .inner-yammer {
+    #yammer-card .card-content .inner-yammer {
         position: relative;
         width: 100%;
     }
 
-    #yammer-card aside {
+    #yammer-card .card-content .aside {
         position: relative;
         width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     /* Services */
@@ -309,6 +314,11 @@
 
     .days {
         gap: 6px 6px;
+    }
+
+    .days > div {
+        width: 30px;
+        height: 30px;
     }
 
     #section-3 .side-content {
@@ -390,11 +400,11 @@
     }
 }
 
-@media screen and (max-width: 605px) {
+/* @media screen and (max-width: 605px) {
     #yammer-card .inner-yammer {
         margin: 0 10px 0 -20px;
     }
-}
+} */
 
 @media screen and (max-width: 490px) {
     .logo {

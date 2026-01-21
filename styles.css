@@ -219,7 +219,7 @@ footer {
     height: 50px;
     border-radius: 50%;
     border: none;
-    background-image: url('profile_picture.jpg');
+    background-image: url('Assets/profile_picture.jpg');
     background-size: contain;
 }
 
@@ -279,7 +279,7 @@ footer {
 .logo {
     height: 80px;
     width: 213px;
-    background-image: url('logo.png');
+    background-image: url('Assets/logo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -55px;
@@ -428,6 +428,7 @@ footer {
 #yammer-card .card-content {
     direction: ltr;
     display: flex;
+    flex-direction: row;
     justify-content: start;
     height: 231px;
     width: 605px;
@@ -438,7 +439,7 @@ footer {
     right: 30px;
 }
 
-#yammer-card aside {
+#yammer-card .aside {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,12 +448,12 @@ footer {
     gap: 7px;
 }
 
-#yammer-card aside button img {
+#yammer-card .aside button img {
     width: 30px;
     text-align: center;
 }
 
-#yammer-card aside button {
+#yammer-card .aside button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1322,7 +1323,7 @@ footer {
     transform: translateY(-50%);
     width: 114px;
     height: 81px;
-    background-image: url('generals.png');
+    background-image: url('Assets/generals.png');
     background-size: contain;
     background-repeat: no-repeat;
 }

@@ -35,14 +35,14 @@ function build()
     var video = studio.children[0];
     var playButton = studio.children[1];
 
-    playButton.style.top = -1 * ((video.clientHeight / 2) + 29);
+    // playButton.style.top = -1 * ((video.clientHeight / 2) + 29);
 
-    var yammer = document.getElementById("yammer-card").children[1];
-    var x = yammer.clientWidth / 605;
-    yammer.children[0].style.transform = `scale(${x})`;
-    yammer.children[0].style.transformOrigin = 'left';
-    yammer.children[1].style.transform = `scale(${x})`;
-    yammer.children[1].style.transformOrigin = 'left';
+    // var yammer = document.getElementById("yammer-card").children[1];
+    // var x = yammer.clientWidth / 605;
+    // yammer.children[0].style.transform = `scale(${x})`;
+    // yammer.children[0].style.transformOrigin = 'left';
+    // yammer.children[1].style.transform = `scale(${x})`;
+    // yammer.children[1].style.transformOrigin = 'left';
 }
 
 function rightNav()
@@ -93,10 +93,10 @@ window.addEventListener('resize', function () {
 
     playButton.style.top = -1 * ((video.clientHeight / 2) + 29);
 
-    var yammer = document.getElementById("yammer-card").children[1];
-    var x = yammer.clientWidth / 605;
-    yammer.children[0].style.transform = `scale(${x})`;
-    yammer.children[0].style.transformOrigin = 'left';
-    yammer.children[1].style.transform = `scale(${x})`;
-    yammer.children[1].style.transformOrigin = 'left';
+    // var yammer = document.getElementById("yammer-card").children[1];
+    // var x = yammer.clientWidth / 605;
+    // yammer.children[0].style.transform = `scale(${x})`;
+    // yammer.children[0].style.transformOrigin = 'left';
+    // yammer.children[1].style.transform = `scale(${x})`;
+    // yammer.children[1].style.transformOrigin = 'left';
 });
