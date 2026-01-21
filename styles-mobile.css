@@ -1,7 +1,8 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1440px) {
     body {
         flex-direction: column !important;
         border: 1px solid #000000;
+        padding: 0 5px 0 5px;
     }
 
     nav {
@@ -38,31 +39,6 @@
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap-reverse;
-    }
-
-    .logo {
-        width: 50%;
-        background-position: 10px -50px;
-    }
-
-    .actions-grp {
-        width: 50%;
-    }
-
-    .action-btn {
-        width: 30px;
-        height: 30px;
-        padding: 2.5px 0 0 0.5px;
-    }
-
-    .translate-btn {
-        width: 30px;
-        height: 30px;
-    }
-
-    .profile-picture {
-        width: 37.5px;
-        height: 37.5px;
     }
 
     .top-cards {
@@ -207,7 +183,14 @@
     }
 
     #yammer-card .card-content {
-        width: 90%;
+        width: 100%;
+        max-width: 605px;
+        position: relative;
+        right: 0;
+        margin: auto;
+        height: auto;
+        justify-content: left;
+        gap: 0;
     }
 
     #services-card .card-content {
@@ -225,24 +208,30 @@
     }
 
     #hi .card-content {
-        width: 83%;
-        padding: 30px 33px 0 33px;
+        width: 91%;
+        padding: 30px 4.43% 0 4.43%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     #offers .card-content {
-        width: 100%;
+        width: 396px;
+        margin: auto;
     }
 
     #ads .card-content {
         width: 100%;
     }
 
+    #ads .card-content .inner-content {
+        width: 397px;
+        margin: auto;
+    }
+
     #events .card-content {
-        width: 90%;
-        padding: 20px 20px 20px 20px;
+        width: 94%;
+        padding: 3% 3% 3% 3%;
     }
 
     #studio .card-content {
@@ -254,6 +243,17 @@
     }
 
     #forms .card-content {
+        width: 100%;
+    }
+
+    /* Yammer */
+    #yammer-card .inner-yammer {
+        position: relative;
+        width: 100%;
+    }
+
+    #yammer-card aside {
+        position: relative;
         width: 100%;
     }
 
@@ -277,6 +277,7 @@
         width: 99%;
         right: 0;
         border: none;
+        margin: auto;
     }
 
     .inner-line {
@@ -323,6 +324,7 @@
     #hi .hi-cards {
         width: 340px;
         height: 300px;
+        margin: auto;
     }
 
     #hi .cards {
@@ -366,8 +368,6 @@
         left: -23px;
     }
 
-    /* Ads */
-
     /* Events */
     #events .card-content {
         display: flex;
@@ -382,25 +382,25 @@
     /* Studio */
     #studio video {
         width: 100%;
-    }
-
-    .pagination {
-        top: -130px;
-    }
-
-    /* Generals */
-    #generals {
-        position: relative;
-        top: -130px;
-    }
-
-    /* Forms */
-    #forms {
-        position: relative;
-        top: -130px;
+        height: auto;
     }
 
     #forms .radio {
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    #yammer-card .inner-yammer {
+        margin: 0 10px 0 -20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .logo {
+        width: 50%;
+        height: 100%;
+        background-position: center center;
+        background-clip: padding-box;
     }
 }

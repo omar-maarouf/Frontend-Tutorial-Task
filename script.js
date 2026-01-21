@@ -9,7 +9,7 @@ function changeNav(tab)
     document.getElementById(tab).classList.replace("inactive", "active");
 }
 
-function buildCalendar()
+function build()
 {
     var days = document.getElementsByClassName("days")[0];
     for (var i = 0; i < days.children.length; i++)
@@ -30,6 +30,19 @@ function buildCalendar()
             }
         }
     }
+
+    var studio = document.getElementById("studio").children[1];
+    var video = studio.children[0];
+    var playButton = studio.children[1];
+
+    playButton.style.top = -1 * ((video.clientHeight / 2) + 29);
+
+    var yammer = document.getElementById("yammer-card").children[1];
+    var x = yammer.clientWidth / 605;
+    yammer.children[0].style.transform = `scale(${x})`;
+    yammer.children[0].style.transformOrigin = 'left';
+    yammer.children[1].style.transform = `scale(${x})`;
+    yammer.children[1].style.transformOrigin = 'left';
 }
 
 function rightNav()
@@ -72,3 +85,18 @@ function play_pauseVideo()
         video.pause();
     }
 }
+
+window.addEventListener('resize', function () {
+    var studio = document.getElementById("studio").children[1];
+    var video = studio.children[0];
+    var playButton = studio.children[1];
+
+    playButton.style.top = -1 * ((video.clientHeight / 2) + 29);
+
+    var yammer = document.getElementById("yammer-card").children[1];
+    var x = yammer.clientWidth / 605;
+    yammer.children[0].style.transform = `scale(${x})`;
+    yammer.children[0].style.transformOrigin = 'left';
+    yammer.children[1].style.transform = `scale(${x})`;
+    yammer.children[1].style.transformOrigin = 'left';
+});

@@ -75,15 +75,15 @@ footer {
 }
 
 .orange2-text {
-    color: #FCB63A;
+    color: #FCB63A !important;
 }
 
 .cyan-text {
-    color: #44C1ED;
+    color: #44C1ED !important;
 }
 
 .purple-text {
-    color: #5218F6;
+    color: #5218F6 !important;
 }
 
 .grey {
@@ -477,6 +477,10 @@ footer {
     font-size: 12px;
     line-height: 25px;
     text-align: center;
+}
+
+.inner-yammer nav a:hover {
+    cursor: pointer;
 }
 
 .inner-yammer .top-bar {
@@ -1071,6 +1075,7 @@ footer {
 }
 
 #banner-1 img {
+    position: relative;
     width: 309px;
     height: 314px;
     border-radius: 5px;
@@ -1135,6 +1140,15 @@ footer {
 #ads img {
     width: 397px;
     height: 171px;
+}
+#ads #images {
+    position: relative;
+    top: -61px;
+    z-index: -1;
+}
+
+#ads .card-content svg {
+    z-index: 1;
 }
 
 #events {
@@ -1229,12 +1243,12 @@ footer {
     height: 335px;
     margin-bottom: 0;
     height: 335px;
+    position: relative;
 }
 
 #studio svg {
     z-index: 10;
     position: relative;
-    top: -200px;
 }
 
 #studio svg:hover {
@@ -1242,14 +1256,11 @@ footer {
 }
 
 .pagination {
-    margin-top: 20px;
     display: grid;
     grid-template-columns: 8px 10px 8px;
     gap: 2px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: -70px;
 }
 
 .circle {
@@ -1272,8 +1283,6 @@ footer {
     display: grid;
     grid-template-columns: 100px 444px;
     align-items: baseline;
-    position: relative;
-    top: 0px;
 }
 
 #generals .card-top .line {
@@ -1322,8 +1331,6 @@ footer {
     display: grid;
     grid-template-columns: 138px 406px;
     align-items: baseline;
-    position: relative;
-    top: 0px;
 }
 
 #forms .card-top .line {
